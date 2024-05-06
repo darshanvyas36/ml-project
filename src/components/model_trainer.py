@@ -48,6 +48,8 @@ class ModelTrainer:
                 "AdaBoost Classifier": AdaBoostRegressor(),
             }
 
+            ## Hyper parameter tuning is missing and written in this place
+
             model_report:dict=evaluate_model(X_train=X_train,y_train=y_train,X_test=X_test, y_test=y_test,models=models)
         
             ##To get best model score from dict
